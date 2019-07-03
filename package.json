@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Just a simple express server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon start",
+    "lint": "./node_modules/.bin/eslint --ext .js config/ models/ routes/ seeders/ index.js",
+    "lint-fix": "./node_modules/.bin/eslint --fix --ext .js config/ models/ routes/ seeders/ index.js",
+    "test": "./node_modules/lab/bin/lab --verbose -m 180000 -M 30000"
+  },
+  "author": "AppSeed",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "express-session": "^1.15.6",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.4.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.3.1",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.6",
+    "supertest": "^4.0.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "code": "^5.2.4",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-prettier": "^2.7.0",
+    "faker": "^4.1.0",
+    "lab": "^17.3.0",
+    "prettier": "^1.16.1"
+  }
+}

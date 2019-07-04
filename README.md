@@ -1,7 +1,7 @@
 
-Express JWT Starter
+Nodejs JWT Starter
 ====
-Basic setup of express with JWT authentication (passport, passport-jwt), ES6.
+Basic Nodejs / Express starter with JWT authentication (passport, passport-jwt), ES6.
 
 ## Requirements
 - [Node.js](https://nodejs.org/) >= 6.x

@@ -66,7 +66,8 @@ Runs the application with [nodemon]("https://nodemon.io/"). Server is listening 
 
 ## Support
 Open a [new issue](https://github.com/app-generator/nodejs-starter/issues/new) here 
-or talk with us on [Discord](https://discord.gg/fZC6hup) for live support.
+or contact [AppSeed support](https://appseed.us/support) 
 
 ## License
 MIT @ [AppSeed](https://appseed.us)
+

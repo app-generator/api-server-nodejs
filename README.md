@@ -1,14 +1,20 @@
 
-Nodejs JWT Starter
-====
+# [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter)
+
 Basic Nodejs / Express starter with JWT authentication (passport, passport-jwt), ES6.
+
+<br />
 
 ## Requirements
 - [Node.js](https://nodejs.org/) >= 6.x
 
+<br />
+
 ## Authentication
 Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` strategy is used to handle the email / password authentication.
 After a successful login the generated token is sent to the requester. 
+
+<br />
 
 ## API
 ### Login: `api/users/login`
@@ -37,6 +43,8 @@ Content-Type: application/json
 }
 ```
 
+<br />
+
 ## Setting up for development
 * clone repo: `git clone https://github.com/app-generator/nodejs-starter.git` 
 * change directory to nodejs-starter: 
@@ -50,12 +58,16 @@ SERVER_ADDRESS=127.0.0.1 // or 0.0.0.0 for all or other interface address you wa
 ```
 * users are saved in file `config/users.js`
 
+<br />
+
 ## Scripts
 **Install Modules**
 ```bash
 $ npm i
 $ npm i nodemon -g 
 ```
+
+<br />
 
 **Run**
 ```bash
@@ -64,10 +76,20 @@ $ npm run dev # with nodemon live update
 ```
 Runs the application with [nodemon]("https://nodemon.io/"). Server is listening on Port 3000 by default. This can be overwritten by `PORT` constant in `.env` file. 
 
+<br />
+
 ## Support
-Open a [new issue](https://github.com/app-generator/nodejs-starter/issues/new) here 
-or contact [AppSeed support](https://appseed.us/support) 
+
+For issues and features request, use **Github** or access the [support page](https://appseed.us/support) provided by **AppSeed** 
+
+<br />
 
 ## License
 MIT @ [AppSeed](https://appseed.us)
+
+<br />
+
+---
+[Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) provided by **AppSeed**
+
 

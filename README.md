@@ -1,7 +1,7 @@
 
 # [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter)
 
-Basic Nodejs / Express starter with JWT authentication, SQLite database, and Sequelize ORM. Actively supported and versioned by **AppSeed** 
+Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) with [JWT authentication](https://jwt.io/introduction/), [SQLite](https://www.sqlite.org/index.html) database, [Sequelize](http://docs.sequelizejs.com/) ORM, unit tests and basic tooling. Actively supported and versioned by **AppSeed** 
 
 <br />
 

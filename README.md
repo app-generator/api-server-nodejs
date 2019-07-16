@@ -1,7 +1,7 @@
 
 # [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter)
 
-Basic Nodejs / Express starter with JWT authentication (passport, passport-jwt), ES6.
+Basic Nodejs / Express starter with JWT authentication, SQLite database, and Sequelize ORM. Actively supported and versioned by **AppSeed** 
 
 <br />
 

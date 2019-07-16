@@ -5,7 +5,11 @@ Basic Nodejs / Express starter with JWT authentication, SQLite database, and Seq
 
 <br />
 
+<p align="center">
+    
 ![Open-Source Nodejs Starter - Product image.](https://github.com/app-generator/static/blob/master/boilerplate-code/boilerplate-code-nodejs-starter.png?raw=true) 
+
+</p>
 
 <br />
 

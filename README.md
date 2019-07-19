@@ -95,5 +95,3 @@ MIT @ [AppSeed](https://appseed.us)
 
 ---
 [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) provided by **AppSeed**
-
-

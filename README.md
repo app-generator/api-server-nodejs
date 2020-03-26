@@ -1,7 +1,11 @@
 
 # [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter)
 
-Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) with [JWT authentication](https://jwt.io/introduction/), [SQLite](https://www.sqlite.org/index.html) database, [Sequelize](http://docs.sequelizejs.com/) ORM, unit tests and basic tooling. Actively supported and versioned by **AppSeed** 
+Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) with [JWT authentication](https://jwt.io/introduction/), [SQLite](https://www.sqlite.org/index.html) database, [Sequelize](http://docs.sequelizejs.com/) ORM, unit tests and basic tooling - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+
+<br />
+
+> Enjoy this project? **Join our efforts** to actively support the open-source ecosystem via a **[PayPal.me donation](https://paypal.me/appseed)**. Thank you!
 
 <br />
 

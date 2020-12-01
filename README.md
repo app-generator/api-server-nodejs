@@ -5,10 +5,6 @@ Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) w
 
 <br />
 
-> Enjoy this project? **Join our efforts** to actively support the open-source ecosystem via a **[PayPal.me donation](https://paypal.me/appseed)**. Thank you!
-
-<br />
-
 ![Open-Source Nodejs Starter - Product cover image.](https://github.com/app-generator/static/blob/master/products/boilerplate-code-nodejs-starter-cover.jpg?raw=true) 
 
 <br />

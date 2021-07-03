@@ -1,7 +1,7 @@
 
 # Nodejs API Server
 
-Express / Nodejs Starter with JWT authentication, SQLite]( database, Sequelize ORM, unit tests and basic tooling - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Express / Nodejs Starter with JWT authentication, SQLite database, Sequelize ORM, unit tests and basic tooling - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
 
 <br />
 

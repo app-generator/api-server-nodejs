@@ -7,26 +7,27 @@
  *
  */
 
-const passport         = require('passport');
-const LocalStrategy    = require('passport-local');
+const passport = require('passport');
+const LocalStrategy = require('passport-local');
 const validatePassword = require('../utils/validatePassword');
-const User            = require('../models').User;
+const User = require('../models').User;
 
 passport.use(new LocalStrategy({
-	usernameField: 'user[email]',
-	passwordField: 'user[password]',
-}, async (email, password, done) => {
-	// Recover the user
-	let user = await User.findOne({where: {email}});
+    usernameField: 'email',
+    passwordField: 'password',
+}, async(email, password, done) => {
 
-	if(!user){
-		return done(null, false, {errors: {'account': 'Invalid account'}});
-	}
+    // Recover the user
+    let user = await User.findOne({ where: { email } });
 
-	// Validate password
-	if ( !validatePassword(password, user.password) ) {
-		return done(null, false, { errors: { 'password': 'Password is invalid'}});
-	}
+    if (!user) {
+        return done(null, false, { errors: { 'account': 'Invalid account' } });
+    }
 
-	return done(null, user);
+    // Validate password
+    if (!validatePassword(password, user.password)) {
+        return done(null, false, { errors: { 'password': 'Password is invalid' } });
+    }
+
+    return done(null, user);
 }));

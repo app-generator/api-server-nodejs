@@ -26,8 +26,6 @@ const userSchema = Joi.object().keys({
 router.post('/login', auth.optional, (req, res, next) => {
     const { body: { user } } = req;
 
-    console.log('Got body:', req.body);
-
     const result = userSchema.validate(req.body);
 
     if (result.error) {
@@ -39,8 +37,6 @@ router.post('/login', auth.optional, (req, res, next) => {
     return passport.authenticate('local', { session: false }, (err, passportUser, info) => {
 
         if (err) {
-
-            console.log('Got auth error:', err);
 
             return next(err);
         }
@@ -65,7 +61,8 @@ router.post('/login', auth.optional, (req, res, next) => {
 router.post('/signup', auth.optional, async(req, res /*, next*/ ) => {
     const { body: { user } } = req;
 
-    console.log('Got body:', req.body);
+    //console.log('> User Email:', req.body.email);
+    //console.log('> User Username:', req.body.username);
 
     const result = userSchema.validate(req.body);
 
@@ -75,12 +72,26 @@ router.post('/signup', auth.optional, async(req, res /*, next*/ ) => {
         });
     }
 
+    email = req.body.email;
+    name = req.body.username;
+
+    // Check eMail
+    let checkEmail = await User.findOne({ where: { email } });
+    if (checkEmail) {
+        return res.status(200).json({
+            errors: "{ 'email':'already registered' }"
+        });
+    }
+
     try {
         const user = await User.create(req.body);
         return res.json({ user });
     } catch (e) {
         return res.status(500).json({
-            errors: e
+
+            //errors: e # this can throw SQL exceptions
+            errors: "{ 'credentials':'already registered' }"
+
         });
     }
 });

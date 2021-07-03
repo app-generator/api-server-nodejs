@@ -1,5 +1,10 @@
 # Change Log
 
+## Unreleased
+### Improvements 
+
+- Merge PR #5 - Added `nodemon` to `devDependencies`
+
 ## [0.0.2] 2021-07-03
 ### Improvements & Fixes
 

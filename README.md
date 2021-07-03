@@ -1,22 +1,23 @@
 
-# [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter)
+# Nodejs API Server
 
-Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) with [JWT authentication](https://jwt.io/introduction/), [SQLite](https://www.sqlite.org/index.html) database, [Sequelize](http://docs.sequelizejs.com/) ORM, unit tests and basic tooling - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+Express / Nodejs Starter with JWT authentication, SQLite]( database, Sequelize ORM, unit tests and basic tooling - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
 
 <br />
 
-![Open-Source Nodejs Starter - Product cover image.](https://github.com/app-generator/static/blob/master/products/boilerplate-code-nodejs-starter-cover.jpg?raw=true) 
+![Open-Source Nodejs API Server - Product cover image.](https://raw.githubusercontent.com/app-generator/static/master/products/boilerplate-code-nodejs-starter-cover.jpg) 
 
 <br />
 
 ## Requirements
-- [Node.js](https://nodejs.org/) >= 6.x
+
+- [Node.js](https://nodejs.org/) >= 10.x
 
 <br />
 
 ## Authentication
-Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` strategy is used to handle the email / password authentication.
-After a successful login the generated token is sent to the requester. 
+
+Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` strategy is used to handle the Email/Password authentication. After a successful login the generated token is sent to the requester. 
 
 <br />
 
@@ -50,9 +51,11 @@ Content-Type: application/json
 <br />
 
 ## Setting up for development
+
 * clone repo: `git clone https://github.com/app-generator/nodejs-starter.git` 
 * change directory to nodejs-starter: 
 * create a file named .env which should contain the following default setup:
+
 ```
 SALT=35kj7waj3k5kja09jeoi21kn0pg13iuhlkn // used in password hashing
 JWT_SECRET=secret        // used in JWT signing
@@ -65,6 +68,7 @@ SERVER_ADDRESS=127.0.0.1 // or 0.0.0.0 for all or other interface address you wa
 <br />
 
 ## Scripts
+
 **Install Modules**
 ```bash
 $ npm i
@@ -89,6 +93,7 @@ For issues and features request, use **Github** or access the [support page](htt
 <br />
 
 ## License
+
 MIT @ [AppSeed](https://appseed.us)
 
 <br />

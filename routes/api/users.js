@@ -58,6 +58,7 @@ router.post('/login', auth.optional, (req, res, next) => {
         }
 
         return res.status(400).send(info);
+
     })(req, res, next);
 });
 

@@ -22,6 +22,7 @@ Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` str
 <br />
 
 ## API
+
 ### Login: `api/users/login`
 ```
 POST api/users/login
@@ -83,6 +84,32 @@ $ npm run start # classic start OR
 $ npm run dev # with nodemon live update  
 ```
 Runs the application with [nodemon]("https://nodemon.io/"). Server is listening on Port 3000 by default. This can be overwritten by `PORT` constant in `.env` file. 
+
+<br />
+
+## Curl tests
+
+**Create user**
+
+```bash
+$ curl -X POST -H 'Content-Type: application/json' -d '{"username":"test1","password":"pass", "email":"test1@appseed.us"}' http://localhost:3000/api/users/signup
+```
+
+<br />
+
+**Login user**
+
+```bash
+$ curl -X POST -H 'Content-Type: application/json' -d '{"email":"test1@appseed.us", "password":"pass"}' http://localhost:3000/api/users/login
+```
+
+<br />
+
+**List Users**
+
+```bash
+$ curl -H 'Content-Type: application/json' http://localhost:3000/api/users/list
+```
 
 <br />
 

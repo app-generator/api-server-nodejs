@@ -18,7 +18,7 @@
         "express": "^4.7.1",
         "express-jwt": "^6.0.0",
         "express-session": "^1.7.2",
-        "joi": "^17.4.1",
+        "joi": "^17.4.0",
         "jsonwebtoken": "^8.4.0",
         "passport": "^0.4.1",
         "passport-local": "^1.0.0",

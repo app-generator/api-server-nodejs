@@ -92,7 +92,9 @@ Runs the application with [nodemon]("https://nodemon.io/"). Server is listening 
 **Create user**
 
 ```bash
-$ curl -X POST -H 'Content-Type: application/json' -d '{"username":"test1","password":"pass", "email":"test1@appseed.us"}' http://localhost:3000/api/users/signup
+$ curl -X POST -H 'Content-Type: application/json' \
+  -d '{"username":"test1","password":"pass", "email":"test1@appseed.us"}' \
+  http://localhost:3000/api/users/signup
 ```
 
 <br />
@@ -100,7 +102,9 @@ $ curl -X POST -H 'Content-Type: application/json' -d '{"username":"test1","pass
 **Login user**
 
 ```bash
-$ curl -X POST -H 'Content-Type: application/json' -d '{"email":"test1@appseed.us", "password":"pass"}' http://localhost:3000/api/users/login
+$ curl -X POST -H 'Content-Type: application/json' \
+  -d '{"email":"test1@appseed.us", "password":"pass"}' \
+  http://localhost:3000/api/users/login
 ```
 
 <br />

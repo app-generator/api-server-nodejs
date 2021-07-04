@@ -5,7 +5,7 @@ Express / Nodejs Starter with JWT authentication, SQLite database, Sequelize ORM
 
 <br />
 
-![Open-Source Nodejs API Server - Product cover image.](https://raw.githubusercontent.com/app-generator/static/master/products/boilerplate-code-nodejs-starter-cover.jpg) 
+> Status: **Work in progress** (complete rewrite).
 
 <br />
 

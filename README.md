@@ -57,7 +57,7 @@ The API server will start using the `PORT` specified in `.env` file (default 500
    |
    |-- config/                              
    |    |-- config.js             # Configuration       
-   |    |-- passport.js           # Define Passport Startegy             
+   |    |-- passport.js           # Define Passport Strategy             
    | 
    |-- models/                              
    |    |-- activeSession.js      # Sessions Model (Mongo)              

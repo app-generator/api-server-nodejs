@@ -1,0 +1,193 @@
+{
+    "info": {
+        "_postman_id": "9f7e4e29-9c75-44c7-9bc6-ccec8eefed4f",
+        "name": "api-server-nodejs",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [{
+            "name": "Register",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"username\":\"test\",\r\n    \"password\":\"pass\", \r\n    \"email\":\"test@appseed.us\"\r\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/users/register",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "users",
+                        "register"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Login",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"password\":\"pass\", \r\n    \"email\":\"test@appseed.us\"\r\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/users/login",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "users",
+                        "login"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Logout",
+            "request": {
+                "method": "POST",
+                "header": [{
+                        "key": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "authorization",
+                        "value": "JWT_TOKEN_HERE",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"token\": \"JWT_TOKEN_HERE\"\r\n}\r\n"
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/users/logout",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "users",
+                        "logout"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Check Session",
+            "request": {
+                "method": "POST",
+                "header": [{
+                        "key": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "authorization",
+                        "type": "text",
+                        "value": "JWT_TOKEN_HERE"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": ""
+                },
+                "url": {
+                    "raw": "http://localhost:5000/api/users/checkSession",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000",
+                    "path": [
+                        "api",
+                        "users",
+                        "checkSession"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Edit User",
+            "request": {
+                "method": "POST",
+                "header": [{
+                        "key": "Content-Type",
+                        "type": "text",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "authorization",
+                        "value": "JWT_TOKEN_HERE",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": " {\r\n        \"userID\": \"60e15ef3a800a95bc456602b\",\r\n        \"username\": \"test\",\r\n        \"email\": \"test@appseed.us\"\r\n}\r\n"
+                },
+                "url": {
+                    "raw": "http://localhost:5100/api/users/edit",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5100",
+                    "path": [
+                        "api",
+                        "users",
+                        "edit"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ],
+    "event": [{
+            "listen": "prerequest",
+            "script": {
+                "id": "f301b48b-6abc-4a5e-adab-5fabecebe24c",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        },
+        {
+            "listen": "test",
+            "script": {
+                "id": "0b4cbbdb-48bd-4e7b-b24e-27e0e176b8ef",
+                "type": "text/javascript",
+                "exec": [
+                    ""
+                ]
+            }
+        }
+    ],
+    "protocolProfileBehavior": {}
+}

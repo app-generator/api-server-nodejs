@@ -1,8 +1,16 @@
 # Change Log
 
-## Unreleased
-### Improvements 
+## [0.0.3] 2021-07-04
+### Complete rewrite
 
+- Update Passport strategy to `JwtStrategy`
+- Persistance via MongoDB
+- API:
+   - Sign UP: `/api/users/register`
+   - Sign IN: `/api/users/login`
+   - Logout: `/api/users/logout`
+   - Check Session: `/api/users/checkSession`
+   - Edit User: `/api/users/edit`
 - Merge PR #5 - Added `nodemon` to `devDependencies`
 
 ## [0.0.2] 2021-07-03

@@ -1,125 +1,134 @@
 
 # Nodejs API Server
 
-Express / Nodejs Starter with JWT authentication, SQLite database, Sequelize ORM, unit tests and basic tooling - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Express / Nodejs Starter with JWT authentication, MongoDB - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` strategy is used to handle the Email/Password authentication. After a successful login the generated token is sent to the requester. 
 
 <br />
 
-> Status: **Work in progress** (complete rewrite).
+> Free Support: 
+
+- Github (issues tracker) 
+- Email: *support @ appseed.us* (max 12h response time)
+- Discord: LIVE Support (registered AppSeed Users) 
 
 <br />
 
 ## Requirements
 
 - [Node.js](https://nodejs.org/) >= 10.x
+- [MongoDB](https://www.mongodb.com/) server 
 
 <br />
 
-## Authentication
+## How to use the code
 
-Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` strategy is used to handle the Email/Password authentication. After a successful login the generated token is sent to the requester. 
+**Clone the sources**
+
+```bash
+$ git clone https://github.com/app-generator/api-server-nodejs.git
+$ cd api-server-nodejs
+```
+
+**Install dependencies** via NPM or Yarn
+
+```bash
+$ npm i
+// OR
+$ yarn
+```
+
+**Start the API server**
+
+```bash
+$ npm start
+// OR
+$ yarn start
+```
+
+The API server will start using the `PORT` specified in `.env` file (default 5000)
+
+<br />
+
+## Codebase Structure
+
+```bash
+< PROJECT ROOT >
+   |
+   |-- config/                              
+   |    |-- config.js             # Configuration       
+   |    |-- passport.js           # Define Passport Startegy             
+   | 
+   |-- models/                              
+   |    |-- activeSession.js      # Sessions Model (Mongo)              
+   |    |-- user.js               # User Model (Mongo) 
+   | 
+   |-- routes/                              
+   |    |-- users.js              # Define Users API Routes
+   | 
+   | 
+   |-- api.js                     # API Entry Point
+   |-- .env                       # Specify the ENV variables
+   |                        
+   |-- ************************************************************************
+```
+
+<br />
+
+## Mongo Settings
+
+The Mongo URI lives in `config/keys.js`
+
+```javascript
+... = 'mongodb://localhost/api_server_nodejs'
+```
 
 <br />
 
 ## API
 
-### Login: `api/users/login`
-```
-POST api/users/login
-Host: localhost:3000
-Content-Type: application/json
+For a fast set up, use this POSTMAN file: [api_sample](#)
 
-{
-    "email": "demo@appseed.us",
-    "password": "demo"
-}
-```
+> **Register** - `api/users/signup`
 
-### Signup: `/api/users/signup`
 ```
 POST api/users/signup
-Host: localhost:3000
 Content-Type: application/json
 
 {
-    "email": "demo@appseed.us",
-    "password": "demo",
-    "name": "George",
-    "surname": "Clooney"
+    "username":"test",
+    "password":"pass", 
+    "email":"test@appseed.us"
 }
 ```
 
 <br />
 
-## Setting up for development
-
-* clone repo: `git clone https://github.com/app-generator/nodejs-starter.git` 
-* change directory to nodejs-starter: 
-* create a file named .env which should contain the following default setup:
+> **Login** - `api/users/login`
 
 ```
-SALT=35kj7waj3k5kja09jeoi21kn0pg13iuhlkn // used in password hashing
-JWT_SECRET=secret        // used in JWT signing
-SESSION_SECRET=secret    // used for session data
-PORT=3000                // the port on which your server will be available on
-SERVER_ADDRESS=127.0.0.1 // or 0.0.0.0 for all or other interface address you want to listen
-```
-* users are saved in file `config/users.js`
+POST /api/users/login
+Content-Type: application/json
 
-<br />
-
-## Scripts
-
-**Install Modules**
-```bash
-$ npm i
-$ npm i nodemon -g 
+{
+    "password":"pass", 
+    "email":"test@appseed.us"
+}
 ```
 
 <br />
 
-**Run**
-```bash
-$ npm run start # classic start OR
-$ npm run dev # with nodemon live update  
+> **Logout** - `api/users/logout`
+
 ```
-Runs the application with [nodemon]("https://nodemon.io/"). Server is listening on Port 3000 by default. This can be overwritten by `PORT` constant in `.env` file. 
+POST api/users/logout
+Content-Type: application/json
+authorization: JWT_TOKEN (returned by Login request)
 
-<br />
-
-## Curl tests
-
-**Create user**
-
-```bash
-$ curl -X POST -H 'Content-Type: application/json' \
-  -d '{"username":"test1","password":"pass", "email":"test1@appseed.us"}' \
-  http://localhost:3000/api/users/signup
+{
+    "token":"JWT_TOKEN"
+}
 ```
-
-<br />
-
-**Login user**
-
-```bash
-$ curl -X POST -H 'Content-Type: application/json' \
-  -d '{"email":"test1@appseed.us", "password":"pass"}' \
-  http://localhost:3000/api/users/login
-```
-
-<br />
-
-**List Users**
-
-```bash
-$ curl -H 'Content-Type: application/json' http://localhost:3000/api/users/list
-```
-
-<br />
-
-## Support
-
-For issues and features request, use **Github** or access the [support page](https://appseed.us/support) provided by **AppSeed** 
 
 <br />
 
@@ -130,4 +139,4 @@ MIT @ [AppSeed](https://appseed.us)
 <br />
 
 ---
-[Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) provided by **AppSeed**
+[Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) - provided by AppSeed [App Generator](https://appseed.us)

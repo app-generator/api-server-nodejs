@@ -13,7 +13,7 @@ const jwt = require('jsonwebtoken');
 const config = require('../config/keys');
 const User = require('../models/user');
 const ActiveSession = require('../models/activeSession');
-const reqAuth = require('../config/safeRoutes').reqAuth;
+const checkToken = require('../config/safeRoutes').checkToken;
 const { smtpConf } = require('../config/config');
 
 // Route: <HOST>:PORT/api/users/
@@ -106,7 +106,7 @@ router.post('/login', (req, res) => {
     });
 });
 
-router.post('/logout', reqAuth, function(req, res) {
+router.post('/logout', checkToken, function(req, res) {
     const token = req.body.token;
     ActiveSession.deleteMany({ token: token }, function(err, item) {
         if (err) {
@@ -116,11 +116,11 @@ router.post('/logout', reqAuth, function(req, res) {
     });
 }); 
 
-router.post('/checkSession', reqAuth, function(req, res) {
+router.post('/checkSession', checkToken, function(req, res) {
     res.json({ success: true });
 });
 
-router.post('/all', reqAuth, function(req, res) {
+router.post('/all', checkToken, function(req, res) {
     User.find({}, function(err, users) {
         if (err) {
             res.json({ success: false });
@@ -135,7 +135,7 @@ router.post('/all', reqAuth, function(req, res) {
     });
 });
 
-router.post('/edit', reqAuth, function(req, res) {
+router.post('/edit', checkToken, function(req, res) {
     const { userID, username, email } = req.body;
 
     User.find({ _id: userID }).then((user) => {

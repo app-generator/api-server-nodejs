@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.4] 2021-07-04
+### Improvements
+
+- Use `Joy` as input validator for `login` & `register`
+- Remove `bodyParser` dependency (flagged as deprecated)
+
 ## [0.0.3] 2021-07-04
 ### Complete rewrite
 

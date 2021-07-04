@@ -5,7 +5,6 @@ Copyright (c) 2019 - present AppSeed.us
 
 */
 const express = require('express');
-const bodyParser = require('body-parser');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const compression = require('compression');
@@ -39,11 +38,10 @@ mongoose
     .catch((err) => console.log(err));
 
 app.use(cors());
+app.use(express.json())
 
 // Express body parser
 app.use('/public', express.static('public'));
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
 
 // Initialize routes middleware
 app.use('/api/users', require('./routes/users'));

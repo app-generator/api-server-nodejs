@@ -87,7 +87,7 @@ The Mongo URI lives in `config/keys.js`
 
 ## API
 
-For a fast set up, use this POSTMAN file: [api_sample](#)
+For a fast set up, use this POSTMAN file: [api_sample](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json)
 
 > **Register** - `api/users/signup`
 

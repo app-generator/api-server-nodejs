@@ -14,6 +14,10 @@ Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` str
 
 <br />
 
+![Nodejs API Server - Open-source Nodejs Starter provided by AppSeed.](https://user-images.githubusercontent.com/51070104/124414813-142aa180-dd5c-11eb-9279-6b082dadc51a.png)
+
+<br />
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/) >= 10.x

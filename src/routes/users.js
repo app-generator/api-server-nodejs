@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /*
 
 Copyright (c) 2019 - present AppSeed.us

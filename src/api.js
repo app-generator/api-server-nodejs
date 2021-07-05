@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 /*
 
 Copyright (c) 2019 - present AppSeed.us
@@ -23,8 +22,6 @@ app.use(compression());
 
 // Passport Config
 require('./config/passport')(passport);
-
-// DB Config
 
 // Connect to MongoDB
 mongoose

@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.0.6] 2021-07-07
+### Improvements
+
+- Deprecate `src/app.js` - now the app is constructed by:
+    - `src/server/index.js`
+    - `src/index.js`
+- Integrate JTest: `yarn test`
+
 ## [0.0.5] 2021-07-05
 ### Improvements
 

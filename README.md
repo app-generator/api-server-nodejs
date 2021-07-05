@@ -142,5 +142,16 @@ MIT @ [AppSeed](https://appseed.us)
 
 <br />
 
+## Credits
+
+This software is provided by the core AppSeed team with an inspiration from other great NodeJS starters: 
+
+- Initial verison - coded by [Teo Deleanu](https://www.linkedin.com/in/teodeleanu/)
+- [Hackathon Starter](https://github.com/sahat/hackathon-starter) - A truly amazing boilerplate for Node.js apps
+- [Node Server Boilerplate](https://github.com/hagopj13/node-express-boilerplate) - just another cool starter
+- [React NodeJS Argon](https://github.com/creativetimofficial/argon-dashboard-react-nodejs) - released by **Creative-Tim** and [ProjectData](https://projectdata.dev/)
+
+<br />
+
 ---
 [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter) - provided by AppSeed [App Generator](https://appseed.us)

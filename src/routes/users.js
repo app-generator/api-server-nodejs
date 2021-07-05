@@ -155,4 +155,11 @@ router.post('/edit', checkToken, function(req, res) {
     });
 });
 
+// Used for tests (nothing functional)
+router.get('/testme', (req, res) => {
+
+    res.status(200).json({ success: true, msg: 'all good' });
+
+});
+
 module.exports = router;

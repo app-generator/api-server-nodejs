@@ -51,6 +51,6 @@ const PORT = process.env.PORT;
 http.createServer({
 }, app)
     .listen(PORT, function() {
-      console.log('App listening on port ' + PORT + '! Go to http://localhost:' + PORT + '/');
+      console.log('API Server is listening on port ' + PORT);
     });
 

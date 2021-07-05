@@ -4,7 +4,7 @@
 Copyright (c) 2019 - present AppSeed.us
 
 */
-dbPasswordDev = 'mongodb://localhost/api_server_nodejs';
+dbPasswordDev = 'mongodb://localhost:27017/api_server_nodejs';
 
 module.exports = {
   mongoURI: dbPasswordDev,

@@ -4,6 +4,7 @@
 ### Improvements
 
 - Move sources to `src` folder
+- Dockerize project (unstable) - See issue #6
 
 ## [0.0.4] 2021-07-04
 ### Improvements

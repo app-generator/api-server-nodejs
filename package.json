@@ -4,7 +4,7 @@
     "description": "RESTful back-end for Node.js and Express.js",
     "main": "src/api.js",
     "scripts": {
-        "start": "nodemon api",
+        "start": "nodemon src/api",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "AppSeed.us",
@@ -21,13 +21,11 @@
         "http": "0.0.1-security",
         "https": "^1.0.0",
         "jsonwebtoken": "^7.4.1",
-        "mongoose": "^5.9.9",
-        "mongoose-title-case": "0.0.4",
-        "mongoose-unique-validator": "^1.0.5",
-        "mongoose-validator": "^1.3.2",
+        "mongoose": "^5.7.7",
         "passport": "^0.3.2",
         "passport-jwt": "^2.2.1",
-        "path": "^0.12.7"
+        "path": "^0.12.7",
+        "nodemon": "^2.0.9"
     },
     "devDependencies": {
         "eslint": "^7.14.0",

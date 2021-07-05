@@ -12,16 +12,16 @@ const http = require('http');
 const fs = require('fs');
 const cors = require('cors');
 const path = require('path');
-const db = require('./config/keys').mongoURI;
+const db = require('../config/keys').mongoURI;
 
 require('dotenv').config();
 
 // Instantiate express
-const app = express();
-app.use(compression());
+const server = express();
+server.use(compression());
 
 // Passport Config
-require('./config/passport')(passport);
+require('../config/passport')(passport);
 
 // Connect to MongoDB
 mongoose
@@ -34,20 +34,10 @@ mongoose
     .then(() => console.log('MongoDB Connected'))
     .catch((err) => console.log(err));
 
-app.use(cors());
-app.use(express.json())
-
-// Express body parser
-app.use('/public', express.static('public'));
+server.use(cors());
+server.use(express.json())
 
 // Initialize routes middleware
-app.use('/api/users', require('./routes/users'));
+server.use('/api/users', require('../routes/users'));
 
-const PORT = process.env.PORT;
-
-http.createServer({
-}, app)
-    .listen(PORT, function() {
-      console.log('API Server is listening on port ' + PORT);
-    });
-
+module.exports = server;

@@ -1,6 +1,6 @@
 # Change Log
 
-## Unreleased
+## [0.0.5] 2021-07-05
 ### Improvements
 
 - Move sources to `src` folder

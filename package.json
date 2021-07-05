@@ -2,7 +2,7 @@
     "name": "api-server-nodejs",
     "version": "0.0.4",
     "description": "RESTful back-end for Node.js and Express.js",
-    "main": "api.js",
+    "main": "src/api.js",
     "scripts": {
         "start": "nodemon api",
         "test": "echo \"Error: no test specified\" && exit 1"

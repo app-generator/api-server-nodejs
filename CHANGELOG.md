@@ -4,7 +4,7 @@
 ### Improvements
 
 - Move sources to `src` folder
-- Dockerize project (unstable) - See issue #6
+- Dockerize project (unstable) - See issue [#6](https://github.com/app-generator/api-server-nodejs/issues/6)
 
 ## [0.0.4] 2021-07-04
 ### Improvements

@@ -9,8 +9,8 @@ Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` str
 > Free Support: 
 
 - Github (issues tracker) 
-- Email: *support @ appseed.us* (max 12h response time)
-- Discord: LIVE Support (registered AppSeed Users) 
+- Email: **support @ appseed.us** (max 12h response time)
+- **Discord**: [LIVE Support](https://discord.gg/fZC6hup) (registered AppSeed Users) 
 
 <br />
 

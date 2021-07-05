@@ -87,11 +87,12 @@ router.post('/login', (req, res) => {
                 const token = jwt.sign(user, config.secret, {
                     expiresIn: 86400, // 1 week
                 });
-                // Don't include the password in the returned user object
+
                 const query = { userId: user._id, token: token };
                 ActiveSession.create(query, function(err, cd) {
+                    
+                    // Delete the password (hash)
                     user.password = null;
-                    user.__v = null;
                     return res.json({
                         success: true,
                         token: token,

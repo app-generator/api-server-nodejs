@@ -1,6 +1,6 @@
 {
     "name": "api-server-nodejs",
-    "version": "0.0.4",
+    "version": "0.0.8",
     "description": "RESTful back-end for Node.js and Express.js",
     "license": "MIT",
     "author": "AppSeed.us",

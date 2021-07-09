@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.0.8] 2021-07-09
+### Improvements & Fixes
+
+- Patch #8: Typescript Migration - Tests are failing
+- Code refactoring:
+    - `src/config/keys.ts` - removed
+    - `keys.ts` variables moved to `.env`
+
 ## [0.0.7] 2021-07-09
 ### Improvements
 

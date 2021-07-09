@@ -6,10 +6,19 @@ Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` str
 
 <br />
 
-> Free Support: 
+> Features:
 
-- Github (issues tracker) 
-- Email: **support @ appseed.us** (max 12h response time)
+- Simple, intuitive codebase - built for beginners, can be extended with ease.  
+- NodeJS / Express / MongoDB
+- Auth: Passport / `passport-jwt` strategy 
+- Docker 
+- Full-stack ready: [React Berry Dashboard](https://appseed.us/product/react-node-js-berry-dashboard)
+
+<br />
+
+> Support: 
+
+- Github (issues tracker), Email: **support @ appseed.us** 
 - **Discord**: [LIVE Support](https://discord.gg/fZC6hup) (registered AppSeed Users) 
 
 <br />

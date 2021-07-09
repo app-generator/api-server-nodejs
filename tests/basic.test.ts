@@ -7,6 +7,18 @@ Copyright (c) 2019 - present AppSeed.us
 import request from 'supertest';
 
 import app from '../src/server';
+import { prepareDB } from '../src/server/database';
+
+let testDB: {
+  start: () => void;
+  stop: () => Promise<boolean>;
+} | null;
+
+beforeAll(async () => {
+  testDB = await prepareDB();
+  testDB.start();
+});
+afterAll(async () => testDB?.stop());
 
 describe('API tests', () => {
   // The most basic test

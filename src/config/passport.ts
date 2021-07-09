@@ -8,12 +8,11 @@ import passport from 'passport';
 import { ExtractJwt, Strategy as JwtStrategy } from 'passport-jwt';
 
 import User from '../models/user';
-import config from './keys';
 
 export default (pass: passport.PassportStatic) => {
   const opts = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
-    secretOrKey: config.secret,
+    secretOrKey: process.env.SECRET,
   };
 
   pass.use(

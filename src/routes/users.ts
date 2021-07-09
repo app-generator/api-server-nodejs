@@ -8,7 +8,6 @@ import express from 'express';
 import Joi from 'joi';
 import jwt from 'jsonwebtoken';
 
-import config from '../config/keys';
 import { checkToken } from '../config/safeRoutes';
 import ActiveSession from '../models/activeSession';
 import User from '../models/user';
@@ -87,7 +86,10 @@ router.post('/login', (req, res) => {
 
     bcrypt.compare(password, user.password, (_err2, isMatch) => {
       if (isMatch) {
-        const token = jwt.sign(user.toJSON(), config.secret, {
+        if (!process.env.SECRET) {
+          throw new Error('SECRET not provided');
+        }
+        const token = jwt.sign(user.toJSON(), process.env.SECRET, {
           expiresIn: 86400, // 1 week
         });
 

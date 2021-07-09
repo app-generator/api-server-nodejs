@@ -6,7 +6,7 @@
     "author": "AppSeed.us",
     "main": "src/index",
     "scripts": {
-        "start": "node build/index.js",
+        "start": "npm run build && node build/index.js",
         "dev": "ts-node-dev src/index.ts",
         "test": "jest -i --colors --verbose --detectOpenHandles",
         "lint": "eslint src",

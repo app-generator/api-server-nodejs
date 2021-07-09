@@ -11,6 +11,7 @@ Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` str
 - Simple, intuitive codebase - built for beginners, can be extended with ease.  
 - NodeJS / Express / MongoDB
 - Auth: Passport / `passport-jwt` strategy 
+- [API Interface Descriptor](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json): POSTMAN Collection
 - Docker 
 - Full-stack ready: [React Berry Dashboard](https://appseed.us/product/react-node-js-berry-dashboard)
 

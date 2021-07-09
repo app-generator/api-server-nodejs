@@ -1,15 +1,19 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'commonjs': true,
-    'es2021': true,
+  env: {
+    es2021: true,
+    node: true,
   },
-  'extends': [
-    'google',
-  ],
-  'parserOptions': {
-    'ecmaVersion': 12,
+  extends: ['airbnb-typescript/base', 'plugin:@typescript-eslint/recommended'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    project: './tsconfig.json',
   },
-  'rules': {
+  rules: {
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
+    'consistent-return': 'off',
   },
 };

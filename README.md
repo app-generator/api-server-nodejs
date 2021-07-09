@@ -42,7 +42,15 @@ $ npm i
 $ yarn
 ```
 
-**Start the API server**
+**Start the API server** - development mode
+
+```bash
+$ npm dev
+// OR
+$ yarn dev
+```
+
+**Start the API server** - for production (files served from `build/build/index.js`)
 
 ```bash
 $ npm start
@@ -57,24 +65,24 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 ## Codebase Structure
 
 ```bash
-< PROJECT ROOT >
-   |
-   |-- config/                              
-   |    |-- config.js             # Configuration       
-   |    |-- passport.js           # Define Passport Strategy             
-   | 
-   |-- models/                              
-   |    |-- activeSession.js      # Sessions Model (Mongo)              
-   |    |-- user.js               # User Model (Mongo) 
-   | 
-   |-- routes/                              
-   |    |-- users.js              # Define Users API Routes
-   | 
-   | 
-   |-- api.js                     # API Entry Point
-   |-- .env                       # Specify the ENV variables
-   |                        
-   |-- ************************************************************************
+< ROOT / src >
+     | 
+     |-- config/                              
+     |    |-- config.ts             # Configuration       
+     |    |-- passport.ts           # Define Passport Strategy             
+     | 
+     |-- models/                              
+     |    |-- activeSession.ts      # Sessions Model (Mongo)              
+     |    |-- user.ts               # User Model (Mongo) 
+     | 
+     |-- routes/                              
+     |    |-- users.ts              # Define Users API Routes
+     | 
+     | 
+     |-- index.js                     # API Entry Point
+     |-- .env                       # Specify the ENV variables
+     |                        
+     |-- ************************************************************************
 ```
 
 <br />

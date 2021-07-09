@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.7] 2021-07-09
+### Improvements
+
+- Added typescript support
+
 ## [0.0.6] 2021-07-07
 ### Improvements
 

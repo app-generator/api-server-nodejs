@@ -87,7 +87,7 @@ router.post('/login', (req, res) => {
 
     bcrypt.compare(password, user.password, (_err2, isMatch) => {
       if (isMatch) {
-        const token = jwt.sign(user, config.secret, {
+        const token = jwt.sign(user.toJSON(), config.secret, {
           expiresIn: 86400, // 1 week
         });
 

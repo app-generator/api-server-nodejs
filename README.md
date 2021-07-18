@@ -14,8 +14,8 @@ Simple starter built with Typescrypt / Express / MongoDB and JWT Auth powered by
 - [API Interface Descriptor](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json): POSTMAN Collection
 - Docker 
 - Full-stack Samples that uses this backend 
-     - [React Node JS Datta](https://appseed.us/product/react-node-js-datta-able)
-     - [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard)
+     - [React Node JS Datta](https://appseed.us/product/react-node-js-datta-able) - open-source full-stack sample
+     - [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) - open-source full-stack sample
 
 <br />
 

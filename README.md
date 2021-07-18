@@ -1,19 +1,21 @@
 
 # Nodejs API Server
 
-Express / Nodejs Starter with JWT authentication, MongoDB - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
-Authentication is based on [json web tokens](https://jwt.io). `passport-jwt` strategy is used to handle the Email/Password authentication. After a successful login the generated token is sent to the requester. 
+Simple starter built with Typescrypt / Express / MongoDB and JWT Auth powered by **Passport** library - provided and actively supported by **AppSeed** [App Generator](https://appseed.us/app-generator). The authentication flow is based on [json web tokens](https://jwt.io) and `passport-jwt` strategy. 
 
 <br />
 
 > Features:
 
-- Simple, intuitive codebase - built for beginners, can be extended with ease.  
-- NodeJS / Express / MongoDB
+- Simple, intuitive codebase - built for beginners (can be extended with ease) 
+- Node JS / Express / MongoDB
+- Typescript 
 - Auth: Passport / `passport-jwt` strategy 
 - [API Interface Descriptor](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json): POSTMAN Collection
 - Docker 
-- Full-stack Sample: [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard)
+- Full-stack Samples that uses this backend 
+     - [React Node JS Datta](https://appseed.us/product/react-node-js-datta-able)
+     - [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard)
 
 <br />
 

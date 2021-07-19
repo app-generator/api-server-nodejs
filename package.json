@@ -6,7 +6,9 @@
     "author": "AppSeed.us",
     "main": "src/index",
     "scripts": {
-        "start": "yarn build && node build/index.js",
+        "start": "pm2 start production.config.json",
+        "start-no-daemon": "pm2 start production.config.json --no-daemon",
+        "start-node": "yarn build && node build/index.js",
         "dev": "ts-node-dev src/index.ts",
         "test": "jest -i --colors --verbose --detectOpenHandles",
         "lint": "eslint src --ext .ts",
@@ -25,6 +27,7 @@
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.13.2",
         "passport": "^0.4.1",
+        "pm2": "^5.1.0",
         "passport-jwt": "^4.0.0"
     },
     "devDependencies": {

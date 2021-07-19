@@ -1,5 +1,12 @@
 # Change Log
 
+## [0.0.9] 2021-07-19
+### Production Update
+
+- Use `pm2` in production - new targets added to `package.json`
+    - `start` uses `pm2` to start
+    - `start-node` - load typescript build with Node JS
+
 ## [0.0.8] 2021-07-09
 ### Improvements & Fixes
 

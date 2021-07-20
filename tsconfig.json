@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      "target": "es2018",
+      "declaration": false,
+      "resolveJsonModule": true,
+      "baseUrl": ".",
+      "outDir": "./build",
+      "strict": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "preserveConstEnums": true,
+      "experimentalDecorators": true,
+      "jsx": "preserve",
+      "lib": ["esnext"],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "skipLibCheck": true,
+      "sourceMap": true,
+      "importHelpers": false,
+      "preserveSymlinks": true
+    },
+    "lib": ["esnext"],
+    "include": ["src", "tests"],
+    "exclude": ["node_modules"]
+  }
+  

@@ -23,4 +23,4 @@ SOFTWARE.
 <br />
 
 ---
-For more information regarding licensing, please contact the AppSeed Service < *support@appseed.us* >
+For more information regarding licensing, please contact AppSeed < *support @ appseed.us* >

@@ -16,6 +16,13 @@ Authentication Flow uses [json web tokens](https://jwt.io) via Passport library 
 
 <br />
 
+> Can be used with other UI projects for a complete **fullstack** experience  
+
+- [React Datta Dashboard](https://github.com/app-generator/react-datta-able-dashboard) - open-source sample
+- [React Berry Dashboard](https://github.com/app-generator/react-berry-admin-template) - open-source sample
+
+<br />
+
 > Support: 
 
 - Github (issues tracker), Email: **support @ appseed.us** 

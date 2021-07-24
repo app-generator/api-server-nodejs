@@ -130,11 +130,15 @@ The SQLite Path is set in `.env`, as `SQLITE_PATH`
 
 ##### generate migration:
 
-yarn typeorm migration:generate -n your_migration_name
+```bash
+$ yarn typeorm migration:generate -n your_migration_name
+```
 
 ##### run migration: 
 
-yarn typeorm migration:run
+```bash
+$ yarn typeorm migration:run
+```
 
 <br />
 

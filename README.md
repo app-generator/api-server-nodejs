@@ -10,7 +10,7 @@ Authentication Flow uses [json web tokens](https://jwt.io) via Passport library 
 
 - [API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition) - the unified API structure implemented by this server
 - Simple, intuitive codebase - can be extended with ease.  
-- Typescript
+- Typescript, Joy for validation
 - **Stack**: NodeJS / Express / SQLite / TypeORM
 - Auth: Passport / `passport-jwt` strategy 
 - [API Interface Descriptor](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json): POSTMAN Collection

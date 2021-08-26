@@ -16,7 +16,7 @@ Authentication Flow uses [json web tokens](https://jwt.io) via Passport library 
 
 <br />
 
-> Can be used with other UI projects for a complete **Full-Stack** experience  
+> Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience  
 
 | [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) | [Full-Stack Material PRO](https://appseed.us/full-stack/react-material-dashboard) | [React Node Datta Able](https://github.com/app-generator/react-datta-able) |
 | --- | --- | --- |

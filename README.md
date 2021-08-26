@@ -10,12 +10,13 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 - [API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition) - the unified API structure implemented by this server
 - Simple, intuitive codebase - can be extended with ease.  
-- Typescript, Joy for validation
+- TypeScript, Joy for validation
 - **Stack**: NodeJS / Express / SQLite / TypeORM
 - Auth: Passport / `passport-jwt` strategy 
 
 <br />
 
+> **[PRO Version](https://github.com/app-generator/api-server-nodejs-pro)** available: MomgoDB persistance, DOcker, Unitary Tests, 24/7 LIVE Support via [Discord](https://discord.gg/fZC6hup)
 > Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience  
 
 | [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) | [Full-Stack Material PRO](https://appseed.us/full-stack/react-material-dashboard) | [React Node Datta Able](https://github.com/app-generator/react-datta-able) |

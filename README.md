@@ -26,13 +26,6 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 <br />
 
-> Support: 
-
-- Github (issues tracker), Email: **support @ appseed.us** 
-- **Discord**: [LIVE Support](https://discord.gg/fZC6hup) (registered AppSeed Users) 
-
-<br />
-
 ![Nodejs API Server - Open-source Nodejs Starter provided by AppSeed.](https://user-images.githubusercontent.com/51070104/124414813-142aa180-dd5c-11eb-9279-6b082dadc51a.png)
 
 <br />

@@ -13,15 +13,14 @@ Authentication Flow uses [json web tokens](https://jwt.io) via Passport library 
 - Typescript, Joy for validation
 - **Stack**: NodeJS / Express / SQLite / TypeORM
 - Auth: Passport / `passport-jwt` strategy 
-- [API Interface Descriptor](https://github.com/app-generator/api-server-nodejs/blob/master/media/api.postman_collection.json): POSTMAN Collection
 
 <br />
 
-> Can be used with other UI projects for a complete **fullstack** experience  
+> Can be used with other UI projects for a complete **Full-Stack** experience  
 
-- [React Berry Dashboard](https://github.com/app-generator/react-berry-admin-template) - open-source sample
-- [React Datta Dashboard](https://github.com/app-generator/react-datta-able-dashboard) - open-source sample
-- [React Datta Dashboard PRO](https://appseed.us/product/react-node-js-datta-able-pro) - commercial fullstack product
+| [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) | [Full-Stack Material PRO](https://appseed.us/full-stack/react-material-dashboard) | [React Node Datta Able](https://github.com/app-generator/react-datta-able) |
+| --- | --- | --- |
+| [![React Node JS Berry](![image](https://user-images.githubusercontent.com/51070104/130930004-0c3ff07e-c769-42b4-8a70-9e6a953b6e28.png))](https://appseed.us/product/react-node-js-berry-dashboard) | [![Full-Stack Material PRO](https://user-images.githubusercontent.com/51070104/128878037-50da7a12-787d-455d-933a-30b2957e2896.png)](https://appseed.us/full-stack/react-material-dashboard) | [![React Node Datta Able](https://user-images.githubusercontent.com/51070104/125737710-834a9e6f-c39b-4f3b-a42a-9583ce2ce1da.png)](https://github.com/app-generator/react-datta-able)
 
 <br />
 

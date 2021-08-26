@@ -16,7 +16,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 <br />
 
-> **[PRO Version](https://github.com/app-generator/api-server-nodejs-pro)** available: MomgoDB persistance, DOcker, Unitary Tests, 24/7 LIVE Support via [Discord](https://discord.gg/fZC6hup)
+> **[PRO Version](https://github.com/app-generator/api-server-nodejs-pro)** available: MongoDB persistance, Docker, Unitary Tests, 24/7 LIVE Support via [Discord](https://discord.gg/fZC6hup)
 
 > Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience:
 

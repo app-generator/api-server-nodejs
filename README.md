@@ -1,7 +1,7 @@
 
 # [Nodejs API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)
 
-Express / Nodejs Starter with JWT authentication, and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us/app-generator).
+Express / Nodejs Starter with JWT authentication, and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
 Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
 
 <br />

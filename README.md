@@ -16,7 +16,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 <br />
 
-> **[PRO Version](https://github.com/app-generator/api-server-nodejs-pro)** available: MongoDB persistance, Docker, Unitary Tests, 24/7 LIVE Support via [Discord](https://discord.gg/fZC6hup)
+[![AppSeed - Black Friday Offer for 2021 ](https://user-images.githubusercontent.com/51070104/143680027-6aa964c6-a4f6-4615-a839-ad2546c7a281.jpg)](https://appseed.us/bundles/black-friday)
 
 <br />
 

@@ -16,10 +16,6 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 <br />
 
-[![AppSeed - Black Friday Offer for 2021 ](https://user-images.githubusercontent.com/51070104/143680027-6aa964c6-a4f6-4615-a839-ad2546c7a281.jpg)](https://appseed.us/bundles/black-friday)
-
-<br />
-
 > Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience:
 
 | [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) | [React Node Soft Dashboard](https://appseed.us/product/node-js-react-soft-dashboard) | [React Node Datta Able](https://github.com/app-generator/react-datta-able) |

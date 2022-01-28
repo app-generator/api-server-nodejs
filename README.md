@@ -38,23 +38,25 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 <br />
 
-## Requirements
+## ✨ Requirements
 
 - [Node.js](https://nodejs.org/) >= 12.x
 - [SQLite](https://www.sqlite.org/index.html)
 
 <br />
 
-## How to use the code
+## ✨ How to use the code
 
-**Step #1** - Clone the project
+> **Step #1** - Clone the project
 
 ```bash
 $ git clone https://github.com/app-generator/api-server-nodejs.git
 $ cd api-server-nodejs
 ```
 
-**Step #2** - Install dependencies via NPM or Yarn
+<br />
+
+> **Step #2** - Install dependencies via NPM or Yarn
 
 ```bash
 $ npm i
@@ -62,13 +64,17 @@ $ npm i
 $ yarn
 ```
 
-**Step #3** - Run the SQLite migration via TypeORM
+<br />
+
+> **Step #3** - Run the SQLite migration via TypeORM
 
 ```
 $ yarn typeorm migration:run
 ```
 
-**Step #4** - Start the API server (development mode)
+<br />
+
+> **Step #4** - Start the API server (development mode)
 
 ```bash
 $ npm dev
@@ -76,7 +82,9 @@ $ npm dev
 $ yarn dev
 ```
 
-**Step #5** - Production Build (files generated in `build` directory)
+<br />
+
+> **Step #5** - Production Build (files generated in `build` directory)
 
 ```bash
 $ npm build
@@ -84,7 +92,9 @@ $ npm build
 $ yarn build
 ```
 
-**Step #6** - Start the API server for production (files served from `build/index.js`)
+<br />
+
+> **Step #6** - Start the API server for production (files served from `build/index.js`)
 
 ```bash
 $ npm start
@@ -96,7 +106,7 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 
 <br />
 
-## Codebase Structure
+## ✨ Codebase Structure
 
 ```bash
 < ROOT / src >
@@ -116,7 +126,7 @@ The API server will start using the `PORT` specified in `.env` file (default 500
      |    |-- users.ts              # Define Users API Routes
      | 
      | 
-     |-- index.js                     # API Entry Point
+     |-- index.js                   # API Entry Point
      |-- .env                       # Specify the ENV variables
      |                        
      |-- ************************************************************************
@@ -124,11 +134,13 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 
 <br />
 
-## SQLite Path
+## ✨ SQLite Path
 
 The SQLite Path is set in `.env`, as `SQLITE_PATH`
 
-## Database migration
+<br />
+
+## ✨ Database migration
 
 > Generate migration:
 
@@ -144,7 +156,7 @@ $ yarn typeorm migration:run
 
 <br />
 
-## API
+## ✨ API
 
 For a fast set up, use this POSTMAN file: [api_sample](https://github.com/app-generator/api-server-nodejs-pro/blob/master/media/api.postman_collection.json)
 
@@ -191,7 +203,7 @@ authorization: JWT_TOKEN (returned by Login request)
 
 <br />
 
-## Credits
+## ✨ Credits
 
 This software is provided by the core AppSeed team with an inspiration from other great NodeJS starters: 
 

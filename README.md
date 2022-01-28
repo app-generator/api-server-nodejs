@@ -20,9 +20,9 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 | NodeJS | NPM | YARN | Status | 
 | --- | --- | --- | --- | 
-| `v12.22.0` | `v6.14.11` | `v1.22.5` | ✔️ |
-| `v14.15.0` | `v6.14.8`  | `v1.22.5` | ✔️ |
 | `v16.13.0` | `v8.1.0`   | `v1.22.5` | ✔️ | 
+| `v14.15.0` | `v6.14.8`  | `v1.22.5` | ✔️ |
+| `v12.22.0` | `v6.14.11` | `v1.22.5` | ✔️ |
 
 <br />
 

@@ -203,6 +203,13 @@ authorization: JWT_TOKEN (returned by Login request)
 
 <br />
 
+## ✨ Run the Tests
+
+```yarn test```
+
+<br />
+
+
 ## ✨ Credits
 
 This software is provided by the core AppSeed team with an inspiration from other great NodeJS starters: 
@@ -213,10 +220,6 @@ This software is provided by the core AppSeed team with an inspiration from othe
 - [React NodeJS Argon](https://github.com/creativetimofficial/argon-dashboard-react-nodejs) - released by **Creative-Tim** and [ProjectData](https://projectdata.dev/)
 
 <br />
-
-## ✨ Run the tests
-
-```yarn test```
 
 ---
 **[Node JS API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)** - provided by AppSeed [App Generator](https://appseed.us)

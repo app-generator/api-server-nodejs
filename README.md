@@ -214,5 +214,9 @@ This software is provided by the core AppSeed team with an inspiration from othe
 
 <br />
 
+## ✨ Run the tests
+
+```yarn test```
+
 ---
 **[Node JS API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)** - provided by AppSeed [App Generator](https://appseed.us)

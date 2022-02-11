@@ -203,6 +203,13 @@ authorization: JWT_TOKEN (returned by Login request)
 
 <br />
 
+## ✨ Run the Tests
+
+```yarn test```
+
+<br />
+
+
 ## ✨ Credits
 
 This software is provided by the core AppSeed team with an inspiration from other great NodeJS starters: 

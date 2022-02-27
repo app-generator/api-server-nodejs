@@ -1,4 +1,3 @@
-
 # [Nodejs API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)
 
 Express / Nodejs Starter with JWT authentication, and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
@@ -9,28 +8,28 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 > Features:
 
 - [API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition) - the unified API structure implemented by this server
-- Simple, intuitive codebase - can be extended with ease.  
+- Simple, intuitive codebase - can be extended with ease.
 - TypeScript, Joy for validation
 - **Stack**: NodeJS / Express / SQLite / TypeORM
-- Auth: Passport / `passport-jwt` strategy 
+- Auth: Passport / `passport-jwt` strategy
 
 <br />
 
 > Tested with:
 
-| NodeJS | NPM | YARN | Status | 
-| --- | --- | --- | --- | 
-| `v16.13.0` | `v8.1.0`   | `v1.22.5` | ✔️ | 
-| `v14.15.0` | `v6.14.8`  | `v1.22.5` | ✔️ |
-| `v12.22.0` | `v6.14.11` | `v1.22.5` | ✔️ |
+| NodeJS     | NPM        | YARN      | Status |
+| ---------- | ---------- | --------- | ------ |
+| `v16.13.0` | `v8.1.0`   | `v1.22.5` | ✔️     |
+| `v14.15.0` | `v6.14.8`  | `v1.22.5` | ✔️     |
+| `v12.22.0` | `v6.14.11` | `v1.22.5` | ✔️     |
 
 <br />
 
 > Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience:
 
-| [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) | [React Node Soft Dashboard](https://appseed.us/product/node-js-react-soft-dashboard) | [React Node Datta Able](https://github.com/app-generator/react-datta-able) |
-| --- | --- | --- |
-| [![React Node JS Berry](https://user-images.githubusercontent.com/51070104/124934742-aa392300-e00d-11eb-83bf-28d8b8704ec8.png)](https://appseed.us/product/react-node-js-berry-dashboard) | [![React Node Soft Dashboard](https://user-images.githubusercontent.com/51070104/137918158-54b20cce-1ac8-4279-ab89-aac0353ff7d3.png)](https://appseed.us/product/node-js-react-soft-dashboard) | [![React Node Datta Able](https://user-images.githubusercontent.com/51070104/125737710-834a9e6f-c39b-4f3b-a42a-9583ce2ce1da.png)](https://github.com/app-generator/react-datta-able)
+| [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard)                                                                                                           | [React Node Soft Dashboard](https://appseed.us/product/node-js-react-soft-dashboard)                                                                                                           | [React Node Datta Able](https://github.com/app-generator/react-datta-able)                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [![React Node JS Berry](https://user-images.githubusercontent.com/51070104/124934742-aa392300-e00d-11eb-83bf-28d8b8704ec8.png)](https://appseed.us/product/react-node-js-berry-dashboard) | [![React Node Soft Dashboard](https://user-images.githubusercontent.com/51070104/137918158-54b20cce-1ac8-4279-ab89-aac0353ff7d3.png)](https://appseed.us/product/node-js-react-soft-dashboard) | [![React Node Datta Able](https://user-images.githubusercontent.com/51070104/125737710-834a9e6f-c39b-4f3b-a42a-9583ce2ce1da.png)](https://github.com/app-generator/react-datta-able) |
 
 <br />
 
@@ -110,25 +109,25 @@ The API server will start using the `PORT` specified in `.env` file (default 500
 
 ```bash
 < ROOT / src >
-     | 
-     |-- config/                              
-     |    |-- config.ts             # Configuration       
-     |    |-- passport.ts           # Define Passport Strategy             
-     | 
+     |
+     |-- config/
+     |    |-- config.ts             # Configuration
+     |    |-- passport.ts           # Define Passport Strategy
+     |
      |-- migration/
      |    |-- some_migration.ts     # database migrations
      |
-     |-- models/                              
-     |    |-- activeSession.ts      # Sessions Model (Typeorm)              
-     |    |-- user.ts               # User Model (Typeorm) 
-     | 
-     |-- routes/                              
+     |-- models/
+     |    |-- activeSession.ts      # Sessions Model (Typeorm)
+     |    |-- user.ts               # User Model (Typeorm)
+     |
+     |-- routes/
      |    |-- users.ts              # Define Users API Routes
-     | 
-     | 
+     |
+     |
      |-- index.js                   # API Entry Point
      |-- .env                       # Specify the ENV variables
-     |                        
+     |
      |-- ************************************************************************
 ```
 
@@ -148,9 +147,10 @@ The SQLite Path is set in `.env`, as `SQLITE_PATH`
 $ yarn typeorm migration:generate -n your_migration_name
 ```
 
-> run migration: 
+> run migration:
 
 ```bash
+$ npm install -g typeorm
 $ yarn typeorm migration:run
 ```
 
@@ -168,7 +168,7 @@ Content-Type: application/json
 
 {
     "username":"test",
-    "password":"pass", 
+    "password":"pass",
     "email":"test@appseed.us"
 }
 ```
@@ -182,7 +182,7 @@ POST /api/users/login
 Content-Type: application/json
 
 {
-    "password":"pass", 
+    "password":"pass",
     "email":"test@appseed.us"
 }
 ```
@@ -205,14 +205,13 @@ authorization: JWT_TOKEN (returned by Login request)
 
 ## ✨ Run the Tests
 
-```yarn test```
+`yarn test`
 
 <br />
 
-
 ## ✨ Credits
 
-This software is provided by the core AppSeed team with an inspiration from other great NodeJS starters: 
+This software is provided by the core AppSeed team with an inspiration from other great NodeJS starters:
 
 - Initial verison - coded by [Teo Deleanu](https://www.linkedin.com/in/teodeleanu/)
 - [Hackathon Starter](https://github.com/sahat/hackathon-starter) - A truly amazing boilerplate for Node.js apps
@@ -222,4 +221,5 @@ This software is provided by the core AppSeed team with an inspiration from othe
 <br />
 
 ---
+
 **[Node JS API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)** - provided by AppSeed [App Generator](https://appseed.us)

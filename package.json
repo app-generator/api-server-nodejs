@@ -22,6 +22,7 @@
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
+    "eslint-plugin-jsx-a11y": "6.5.1",
     "express": "4.17.3",
     "express-passport-logout": "^0.1.0",
     "joi": "^17.4.1",
@@ -30,6 +31,7 @@
     "passport-jwt": "^4.0.0",
     "pm2": "^5.1.0",
     "sqlite3": "5.0.2",
+    "swagger-ui-express": "4.3.0",
     "typeorm": "0.2.44"
   },
   "devDependencies": {

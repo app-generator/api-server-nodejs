@@ -47,7 +47,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 ## ✨ How to use the code
 
-> **Step #1** - Clone the project
+> **Step 1** - Clone the project
 
 ```bash
 $ git clone https://github.com/app-generator/api-server-nodejs.git
@@ -56,7 +56,7 @@ $ cd api-server-nodejs
 
 <br />
 
-> **Step #2** - Install dependencies via NPM or Yarn
+> **Step 2** - Install dependencies via NPM or Yarn
 
 ```bash
 $ npm i
@@ -66,7 +66,7 @@ $ yarn
 
 <br />
 
-> **Step #3** - Run the SQLite migration via TypeORM
+> **Step 3** - Run the SQLite migration via TypeORM
 
 ```
 $ yarn typeorm migration:run
@@ -74,30 +74,30 @@ $ yarn typeorm migration:run
 
 <br />
 
-> **Step #4** - Start the API server (development mode)
+> **Step 4** - Start the API server (development mode)
 
 ```bash
-$ npm dev
+$ npm run dev
 // OR
 $ yarn dev
 ```
 
 <br />
 
-> **Step #5** - Production Build (files generated in `build` directory)
+> **Step 5** - Production Build (files generated in `build` directory)
 
 ```bash
-$ npm build
+$ npm run build
 // OR
 $ yarn build
 ```
 
 <br />
 
-> **Step #6** - Start the API server for production (files served from `build/index.js`)
+> **Step 6** - Start the API server for production (files served from `build/index.js`)
 
 ```bash
-$ npm start
+$ npm run start
 // OR
 $ yarn start
 ```

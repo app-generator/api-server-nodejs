@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.0.1] 2022-06-02
+### Improvements
+
+- Dependencies Update for
+  - NodeJS `v17.0.0`
+  - NodeJS `v16.15.1`  
+
 ## [v1.0.0] 2021-07-20
 ### Stable release
 

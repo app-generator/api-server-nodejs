@@ -20,9 +20,9 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 | NodeJS | NPM | YARN | Status | 
 | --- | --- | --- | --- | 
-| `v16.13.0` | `v8.1.0`   | `v1.22.5` | ✔️ | 
-| `v14.15.0` | `v6.14.8`  | `v1.22.5` | ✔️ |
-| `v12.22.0` | `v6.14.11` | `v1.22.5` | ✔️ |
+| `v17.0.0`  | `v8.11.0`  | `v1.22.18` | ✔️ |
+| `v16.15.1` | `v8.11.0`  | `v1.22.18` | ✔️ | 
+| `v16.13.0` | `v8.1.0`   | `v1.22.5`  | ✔️ | 
 
 <br />
 
@@ -40,7 +40,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 ## ✨ Requirements
 
-- [Node.js](https://nodejs.org/) >= 12.x
+- [Node.js](https://nodejs.org/) >= v16.13
 - [SQLite](https://www.sqlite.org/index.html)
 
 <br />

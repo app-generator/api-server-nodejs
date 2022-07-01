@@ -1,7 +1,7 @@
 
-# [Nodejs API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)
+# [Nodejs API Server](https://appseed.us/boilerplate-code/nodejs-starter/)
 
-Express / Nodejs Starter with JWT authentication, and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
+Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter/) with JWT authentication, and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
 Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
 
 <br />
@@ -28,9 +28,9 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 > Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience:
 
-| [React Node JS Berry](https://appseed.us/product/react-node-js-berry-dashboard) | [React Node Soft Dashboard](https://appseed.us/product/node-js-react-soft-dashboard) | [React Node Datta Able](https://github.com/app-generator/react-datta-able) |
+| [React Node JS Berry](https://appseed.us/product/berry-dashboard/api-server-nodejs/react/) | [React Node Soft Dashboard](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/) | [React Node Horizon](https://appseed.us/product/horizon-ui/api-server-nodejs/) |
 | --- | --- | --- |
-| [![React Node JS Berry](https://user-images.githubusercontent.com/51070104/124934742-aa392300-e00d-11eb-83bf-28d8b8704ec8.png)](https://appseed.us/product/react-node-js-berry-dashboard) | [![React Node Soft Dashboard](https://user-images.githubusercontent.com/51070104/137918158-54b20cce-1ac8-4279-ab89-aac0353ff7d3.png)](https://appseed.us/product/node-js-react-soft-dashboard) | [![React Node Datta Able](https://user-images.githubusercontent.com/51070104/125737710-834a9e6f-c39b-4f3b-a42a-9583ce2ce1da.png)](https://github.com/app-generator/react-datta-able)
+| [![React Node JS Berry]((https://user-images.githubusercontent.com/51070104/176936514-f1bccb21-bafe-4b43-9e4c-b6fe0ec9511d.png)](https://appseed.us/product/berry-dashboard/api-server-nodejs/react/) | [![React Node Soft Dashboard](https://user-images.githubusercontent.com/51070104/176936814-74386559-4e05-43d5-b9a4-8f70ce96a610.png)](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/) | [![React Node Horizon](https://user-images.githubusercontent.com/51070104/174428337-181e6dea-0ad9-4fe1-a35f-25e5fa656a9d.png)](https://appseed.us/product/horizon-ui/api-server-nodejs/)
 
 <br />
 
@@ -222,4 +222,4 @@ This software is provided by the core AppSeed team with an inspiration from othe
 <br />
 
 ---
-**[Node JS API Server](https://docs.appseed.us/boilerplate-code/api-server/node-js)** - provided by AppSeed [App Generator](https://appseed.us)
+**[Node JS API Server](https://appseed.us/boilerplate-code/nodejs-starter/)** - provided by AppSeed [App Generator](https://appseed.us)

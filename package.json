@@ -5,6 +5,7 @@
     "license": "Commercial",
     "author": "AppSeed.us",
     "main": "src/index",
+    "type": "module",
     "scripts": {
         "start": "pm2 start production.config.json",
         "start-no-daemon": "pm2 start production.config.json --no-daemon",

@@ -1,5 +1,12 @@
 # Change Log
 
+## [v1.0.2] 2022-11-06
+### Improvements
+
+- Updated for Deploy on RENDER using [Python Deployer](https://github.com/app-generator/deploy-automation-render)
+  - `python.exe .\deployer.py nodejs https://github.com/app-generator/api-server-nodejs`
+  - The new API is usable via `https://api-server-nodejs-<RANDOM>.onrender.com/api/`
+
 ## [v1.0.1] 2022-06-02
 ### Improvements
 

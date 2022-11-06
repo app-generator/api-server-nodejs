@@ -8,21 +8,22 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 > Features:
 
-- [API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition) - the unified API structure implemented by this server
-- Simple, intuitive codebase - can be extended with ease.  
-- TypeScript, Joy for validation
-- **Stack**: NodeJS / Express / SQLite / TypeORM
-- Auth: Passport / `passport-jwt` strategy 
+- ✅ [API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition) - the unified API structure implemented by this server
+- ✅ Simple, intuitive codebase - can be extended with ease.  
+- ✅ `TypeScript`, `Joy` for validation
+- ✅ **Stack**: NodeJS / Express / SQLite / TypeORM
+- ✅ Auth: Passport / `passport-jwt` strategy 
 
 <br />
 
 > Tested with:
 
-| NodeJS | NPM | YARN | Status | 
-| --- | --- | --- | --- | 
-| `v17.0.0`  | `v8.11.0`  | `v1.22.18` | ✔️ |
-| `v16.15.1` | `v8.11.0`  | `v1.22.18` | ✔️ | 
-| `v16.13.0` | `v8.1.0`   | `v1.22.5`  | ✔️ | 
+| NodeJS | NPM | YARN | 
+| --- | --- | --- | 
+| `v18.0.0`  | ❌ | ✅ |
+| `v17.0.0`  | ❌ | ✅ |
+| `v16.13.0` | ❌ | ✅ | 
+| `v16.0.0`  | ❌ | ❌ | 
 
 <br />
 
@@ -56,11 +57,9 @@ $ cd api-server-nodejs
 
 <br />
 
-> **Step 2** - Install dependencies via NPM or Yarn
+> **Step 2** - Install dependencies via `Yarn`
 
 ```bash
-$ npm i
-// OR
 $ yarn
 ```
 
@@ -77,8 +76,6 @@ $ yarn typeorm migration:run
 > **Step 4** - Start the API server (development mode)
 
 ```bash
-$ npm run dev
-// OR
 $ yarn dev
 ```
 
@@ -87,8 +84,6 @@ $ yarn dev
 > **Step 5** - Production Build (files generated in `build` directory)
 
 ```bash
-$ npm run build
-// OR
 $ yarn build
 ```
 
@@ -97,8 +92,6 @@ $ yarn build
 > **Step 6** - Start the API server for production (files served from `build/index.js`)
 
 ```bash
-$ npm run start
-// OR
 $ yarn start
 ```
 

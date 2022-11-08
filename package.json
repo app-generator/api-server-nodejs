@@ -5,6 +5,9 @@
     "license": "Commercial",
     "author": "AppSeed.us",
     "main": "src/index",
+    "build": {
+        "yarn": "v16.13.0,v17.0.0,v18.0.0"
+    },     
     "scripts": {
         "start": "pm2 start production.config.json",
         "start-no-daemon": "pm2 start production.config.json --no-daemon",

@@ -1,5 +1,13 @@
 # Change Log
 
+## [v1.0.3] 2022-11-08
+### Improvements
+
+- Save Compat matrix in `package.json`
+  - `build` node
+  - Yarn, NPM
+  - NodeJS versions
+
 ## [v1.0.2] 2022-11-06
 ### Improvements
 

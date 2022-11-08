@@ -13,7 +13,9 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 - ✅ `TypeScript`, `Joy` for validation
 - ✅ **Stack**: NodeJS / Express / SQLite / TypeORM
 - ✅ Auth: Passport / `passport-jwt` strategy 
-
+- 🚀 `Instant Deploy` on RENDER using [Python Deployer](https://github.com/app-generator/deploy-automation-render)
+  - `python.exe deployer.py nodejs <THIS_REPO>`
+  
 <br />
 
 > Tested with:

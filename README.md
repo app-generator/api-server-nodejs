@@ -22,10 +22,9 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 | NodeJS | NPM | YARN | 
 | --- | --- | --- | 
-| `v18.0.0`  | ❌ | ✅ |
-| `v17.0.0`  | ❌ | ✅ |
-| `v16.13.0` | ❌ | ✅ | 
-| `v16.0.0`  | ❌ | ❌ | 
+| `v18.0.0`  | ✅ | ✅ |
+| `v16.10.0` | ✅ | ✅ | 
+| `v14.15.0` | ✅ | ✅ | 
 
 <br />
 
@@ -62,6 +61,8 @@ $ cd api-server-nodejs
 > **Step 2** - Install dependencies via `Yarn`
 
 ```bash
+$ npm i
+// OR 
 $ yarn
 ```
 
@@ -70,6 +71,8 @@ $ yarn
 > **Step 3** - Run the SQLite migration via TypeORM
 
 ```
+$ npm run typeorm migration:run
+// OR 
 $ yarn typeorm migration:run
 ```
 
@@ -78,6 +81,8 @@ $ yarn typeorm migration:run
 > **Step 4** - Start the API server (development mode)
 
 ```bash
+$ npm run dev
+// OR
 $ yarn dev
 ```
 

@@ -20,6 +20,7 @@
         "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
     },
     "dependencies": {
+        "axios": "^1.2.0",
         "bcrypt": "5.0.1",
         "compression": "^1.7.4",
         "cors": "^2.8.5",
@@ -29,10 +30,11 @@
         "express-passport-logout": "^0.1.0",
         "joi": "^17.4.1",
         "jsonwebtoken": "^8.5.1",
+        "node-fetch": "^2.6.1",
         "passport": "^0.4.1",
         "passport-jwt": "^4.0.0",
-        "sqlite3": "5.0.2",
         "pm2": "^5.1.0",
+        "sqlite3": "5.0.2",
         "typeorm": "0.2.34"
     },
     "devDependencies": {
@@ -42,6 +44,7 @@
         "@types/express": "^4.17.13",
         "@types/jest": "^26.0.24",
         "@types/node": "^16.3.3",
+        "@types/node-fetch": "^2.6.2",
         "@types/passport-jwt": "^3.0.6",
         "@types/sqlite3": "3.1.7",
         "@types/supertest": "^2.0.11",

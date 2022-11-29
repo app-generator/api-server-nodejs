@@ -12,6 +12,7 @@ import passport from 'passport';
 
 import initPassport from '../config/passport';
 import routes from '../routes/users';
+import sessionRoute from '../routes/session.route'
 import { connect } from './database';
 
 // Instantiate express
@@ -32,5 +33,6 @@ server.use(express.json());
 
 // Initialize routes middleware
 server.use('/api/users', routes);
+server.use('/api/sessions', sessionRoute)
 
 export default server;

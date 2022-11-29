@@ -17,8 +17,7 @@ export const createUserWithToken = async (userData: any) => {
   } else {
     const query = {
       username,
-      email: email ? email : "fullstackdev@gmail.com",
-      password: "123",
+      email,
     };
     userRepository.save(query).then((u) => {
       console.log("u", u);

@@ -5,6 +5,7 @@ import {
   } from '../services/session.service';
 import { createUserWithToken } from '../services/user.service';
 
+const frontend_url = process.env.FRONTEND_URL ?? '/'
 
 export const githubOauthHandler = async (
     req: Request,
@@ -14,7 +15,7 @@ export const githubOauthHandler = async (
       const code = req.query.code as string;
   
       if (req.query.error) {
-        return res.redirect(`http://localhost:3000/login`);
+        return res.redirect(`${frontend_url}/login`);
       }
   
       if (!code) {
@@ -29,7 +30,7 @@ export const githubOauthHandler = async (
 
       const returnedUser = await createUserWithToken(userData)
       if(returnedUser) {
-        res.redirect(`http://localhost:3000`);
+        res.redirect(frontend_url);
       }else {
         res.json({error: 'no user returned'})
       }

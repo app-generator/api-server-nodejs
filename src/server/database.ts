@@ -4,6 +4,7 @@ import { Connection, ConnectionOptions, createConnection } from 'typeorm';
 
 import ActiveSession from '../models/activeSession';
 import User from '../models/user';
+import Role from '../models/role';
 
 if (!process.env.SQLITE_PATH) {
   throw new Error('SQLITE_PATH environment variable is not set.');
@@ -12,7 +13,7 @@ if (!process.env.SQLITE_PATH) {
 const options: ConnectionOptions = {
   type: 'sqlite',
   database: process.env.SQLITE_PATH,
-  entities: [User, ActiveSession],
+  entities: [User, ActiveSession, Role],
   logging: true,
 };
 

@@ -203,6 +203,21 @@ authorization: JWT_TOKEN (returned by Login request)
 
 <br />
 
+## ✨ Update role for existing user
+
+Using npm: 
+
+```npm run update-role [user_id] [role_id (optional)]```
+
+Using yarn: 
+
+```npm run update-role [user_id] [role_id (optional)]```
+
+- [user_id] is the id of existing user to update role for.
+- [role_id] is the id of role: 1 for admin & 2 for user. If you don't provide any role_id it would update user to admin role.
+
+<br />
+
 ## ✨ Run the Tests
 
 ```yarn test```

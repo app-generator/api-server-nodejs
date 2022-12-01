@@ -17,7 +17,8 @@
         "lint": "eslint src --ext .ts",
         "build": "tsc -p tsconfig.build.json",
         "typecheck": "tsc --noEmit",
-        "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+        "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
+        "update-role": "ts-node-dev src/update-role.ts"
     },
     "dependencies": {
         "axios": "^1.2.0",

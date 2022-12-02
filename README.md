@@ -50,7 +50,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 ## ✨ How to use the code
 
-> **Step 1** - Clone the project
+> 👉 **Step 1** - Clone the project
 
 ```bash
 $ git clone https://github.com/app-generator/api-server-nodejs.git
@@ -59,7 +59,7 @@ $ cd api-server-nodejs
 
 <br />
 
-> **Step 2** - Install dependencies via `Yarn`
+> 👉 **Step 2** - Install dependencies via `Yarn`
 
 ```bash
 $ npm i
@@ -69,7 +69,7 @@ $ yarn
 
 <br />
 
-> **Step 3** - Run the SQLite migration via TypeORM
+> 👉 **Step 3** - Run the SQLite migration via TypeORM
 
 ```
 $ npm run typeorm migration:run
@@ -79,7 +79,7 @@ $ yarn typeorm migration:run
 
 <br />
 
-> **Step 5** - Edit the `.env` using the template `.env.sample`. 
+> 👉 **Step 4** - Edit the `.env` using the template `.env.sample`. 
 
 ```env
 PORT=5000                       # API PORT
@@ -93,7 +93,7 @@ GITHUB_OAUTH_CLIENT_SECRET= ... # Github OAuth secret
 
 <br />
 
-> **Step 4** - Start the API server (development mode)
+> 👉 **Step 5** - Start the API server (development mode)
 
 ```bash
 $ npm run dev
@@ -103,7 +103,7 @@ $ yarn dev
 
 <br />
 
-> **Step 5** - Production Build (files generated in `build` directory)
+> 👉 **Step 6** - Production Build (files generated in `build` directory)
 
 ```bash
 $ yarn build
@@ -111,7 +111,7 @@ $ yarn build
 
 <br />
 
-> **Step 6** - Start the API server for production (files served from `build/index.js`)
+> 👉 **Step 7** - Start the API server for production (files served from `build/index.js`)
 
 ```bash
 $ yarn start
@@ -157,13 +157,13 @@ The SQLite Path is set in `.env`, as `SQLITE_PATH`
 
 ## ✨ Database migration
 
-> Generate migration:
+> 👉 Generate migration:
 
 ```bash
 $ yarn typeorm migration:generate -n your_migration_name
 ```
 
-> Run migration: 
+> 👉 Run migration: 
 
 ```bash
 $ yarn typeorm migration:run
@@ -175,7 +175,7 @@ $ yarn typeorm migration:run
 
 For a fast set up, use this POSTMAN file: [api_sample](https://github.com/app-generator/api-server-nodejs-pro/blob/master/media/api.postman_collection.json)
 
-> **Register** - `api/users/register`
+> 👉 **Register** - `api/users/register`
 
 ```
 POST api/users/register
@@ -190,7 +190,7 @@ Content-Type: application/json
 
 <br />
 
-> **Login** - `api/users/login`
+> 👉 **Login** - `api/users/login`
 
 ```
 POST /api/users/login
@@ -204,7 +204,7 @@ Content-Type: application/json
 
 <br />
 
-> **Logout** - `api/users/logout`
+> 👉 **Logout** - `api/users/logout`
 
 ```
 POST api/users/logout
@@ -220,11 +220,13 @@ authorization: JWT_TOKEN (returned by Login request)
 
 ## ✨ Update role for existing user
 
-Using npm: 
+> 👉 Using npm: 
 
 ```npm run update-role [user_id] [role_id (optional)]```
 
-Using yarn: 
+<br />
+
+> 👉 Using yarn: 
 
 ```npm run update-role [user_id] [role_id (optional)]```
 

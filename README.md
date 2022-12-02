@@ -13,6 +13,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 - ✅ `TypeScript`, `Joy` for validation
 - ✅ **Stack**: NodeJS / Express / SQLite / TypeORM
 - ✅ Auth: Passport / `passport-jwt` strategy 
+- ✅ OAuth for Github
 - 🚀 `Instant Deploy` on RENDER using [Python Deployer](https://github.com/app-generator/deploy-automation-render)
   - `python.exe deployer.py nodejs <THIS_REPO>`
   
@@ -74,6 +75,20 @@ $ yarn
 $ npm run typeorm migration:run
 // OR 
 $ yarn typeorm migration:run
+```
+
+<br />
+
+> **Step 5** - Edit the `.env` using the template `.env.sample`. 
+
+```env
+PORT=5000                       # API PORT
+SQLITE_PATH=./database.db       # Path to the SQLite database file
+SECRET="Whatever-STRONG"        # Secret for sensitive data hashing 
+
+# Same as for React APP
+GITHUB_OAUTH_CLIENT_ID= ...     # Github OAuth secret 
+GITHUB_OAUTH_CLIENT_SECRET= ... # Github OAuth secret
 ```
 
 <br />
@@ -148,7 +163,7 @@ The SQLite Path is set in `.env`, as `SQLITE_PATH`
 $ yarn typeorm migration:generate -n your_migration_name
 ```
 
-> run migration: 
+> Run migration: 
 
 ```bash
 $ yarn typeorm migration:run

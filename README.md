@@ -13,6 +13,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 - ✅ `TypeScript`, `Joy` for validation
 - ✅ **Stack**: NodeJS / Express / SQLite / TypeORM
 - ✅ Auth: Passport / `passport-jwt` strategy 
+- ✅ OAuth for Github
 - 🚀 `Instant Deploy` on RENDER using [Python Deployer](https://github.com/app-generator/deploy-automation-render)
   - `python.exe deployer.py nodejs <THIS_REPO>`
   
@@ -22,10 +23,9 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 | NodeJS | NPM | YARN | 
 | --- | --- | --- | 
-| `v18.0.0`  | ❌ | ✅ |
-| `v17.0.0`  | ❌ | ✅ |
-| `v16.13.0` | ❌ | ✅ | 
-| `v16.0.0`  | ❌ | ❌ | 
+| `v18.0.0`  | ✅ | ✅ |
+| `v16.10.0` | ✅ | ✅ | 
+| `v14.15.0` | ✅ | ✅ | 
 
 <br />
 
@@ -50,7 +50,7 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 
 ## ✨ How to use the code
 
-> **Step 1** - Clone the project
+> 👉 **Step 1** - Clone the project
 
 ```bash
 $ git clone https://github.com/app-generator/api-server-nodejs.git
@@ -59,31 +59,51 @@ $ cd api-server-nodejs
 
 <br />
 
-> **Step 2** - Install dependencies via `Yarn`
+> 👉 **Step 2** - Install dependencies via `Yarn`
 
 ```bash
+$ npm i
+// OR 
 $ yarn
 ```
 
 <br />
 
-> **Step 3** - Run the SQLite migration via TypeORM
+> 👉 **Step 3** - Run the SQLite migration via TypeORM
 
 ```
+$ npm run typeorm migration:run
+// OR 
 $ yarn typeorm migration:run
 ```
 
 <br />
 
-> **Step 4** - Start the API server (development mode)
+> 👉 **Step 4** - Edit the `.env` using the template `.env.sample`. 
+
+```env
+PORT=5000                       # API PORT
+SQLITE_PATH=./database.db       # Path to the SQLite database file
+SECRET="Whatever-STRONG"        # Secret for sensitive data hashing 
+
+# Same as for React APP
+GITHUB_OAUTH_CLIENT_ID= ...     # Github OAuth secret 
+GITHUB_OAUTH_CLIENT_SECRET= ... # Github OAuth secret
+```
+
+<br />
+
+> 👉 **Step 5** - Start the API server (development mode)
 
 ```bash
+$ npm run dev
+// OR
 $ yarn dev
 ```
 
 <br />
 
-> **Step 5** - Production Build (files generated in `build` directory)
+> 👉 **Step 6** - Production Build (files generated in `build` directory)
 
 ```bash
 $ yarn build
@@ -91,7 +111,7 @@ $ yarn build
 
 <br />
 
-> **Step 6** - Start the API server for production (files served from `build/index.js`)
+> 👉 **Step 7** - Start the API server for production (files served from `build/index.js`)
 
 ```bash
 $ yarn start
@@ -137,13 +157,13 @@ The SQLite Path is set in `.env`, as `SQLITE_PATH`
 
 ## ✨ Database migration
 
-> Generate migration:
+> 👉 Generate migration:
 
 ```bash
 $ yarn typeorm migration:generate -n your_migration_name
 ```
 
-> run migration: 
+> 👉 Run migration: 
 
 ```bash
 $ yarn typeorm migration:run
@@ -155,7 +175,7 @@ $ yarn typeorm migration:run
 
 For a fast set up, use this POSTMAN file: [api_sample](https://github.com/app-generator/api-server-nodejs-pro/blob/master/media/api.postman_collection.json)
 
-> **Register** - `api/users/register`
+> 👉 **Register** - `api/users/register`
 
 ```
 POST api/users/register
@@ -170,7 +190,7 @@ Content-Type: application/json
 
 <br />
 
-> **Login** - `api/users/login`
+> 👉 **Login** - `api/users/login`
 
 ```
 POST /api/users/login
@@ -184,7 +204,7 @@ Content-Type: application/json
 
 <br />
 
-> **Logout** - `api/users/logout`
+> 👉 **Logout** - `api/users/logout`
 
 ```
 POST api/users/logout
@@ -198,12 +218,32 @@ authorization: JWT_TOKEN (returned by Login request)
 
 <br />
 
-## ✨ Run the Tests
+## ✨ Update role for existing user
 
-```yarn test```
+> 👉 Using npm: 
+
+```$ npm run update-role [user_id] [role_id (optional)]```
 
 <br />
 
+> 👉 Using yarn: 
+
+```$ yarn update-role [user_id] [role_id (optional)]```
+
+- [user_id] is the id of existing user to update role for.
+- [role_id] is the id of role: 1 for admin & 2 for user. If you don't provide any role_id it would update user to admin role.
+
+<br />
+
+## ✨ Run the Tests (`minimal suite`)
+
+```
+$ npm run test
+// OR
+$ yarn test
+```
+
+<br />
 
 ## ✨ Credits
 

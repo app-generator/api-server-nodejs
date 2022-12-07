@@ -12,6 +12,7 @@ import { checkToken } from '../config/safeRoutes';
 import ActiveSession from '../models/activeSession';
 import User from '../models/user';
 import { connection } from '../server/database';
+import { logoutUser } from '../controllers/logout.controller';
 
 // eslint-disable-next-line new-cap
 const router = express.Router();
@@ -115,16 +116,7 @@ router.post('/login', (req, res) => {
   });
 });
 
-router.post('/logout', checkToken, (req, res) => {
-  const { token } = req.body;
-  const activeSessionRepository = connection!.getRepository(ActiveSession);
-
-  activeSessionRepository.delete({ token })
-    .then(() => res.json({ success: true }))
-    .catch(() => {
-      res.json({ success: false, msg: 'Token revoked' });
-    });
-});
+router.post('/logout', checkToken, logoutUser);
 
 router.post('/checkSession', checkToken, (_req, res) => {
   res.json({ success: true });

@@ -1,5 +1,17 @@
 # Change Log
 
+## [v1.0.6] 2022-12-02
+### Changes
+
+- OAuth via Github (stable)
+
+## [v1.0.5] 2022-11-29
+### Changes
+
+- The product can be used with:
+  - Node 14, 16, 18
+  - Yarn & NPM
+
 ## [v1.0.4] 2022-11-13
 ### Improvements
 

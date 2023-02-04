@@ -1,20 +1,19 @@
 
 # [Nodejs API Server](https://appseed.us/boilerplate-code/nodejs-starter/)
 
-Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter/) with JWT authentication, and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
+Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter/) with JWT authentication, OAuth (Github), and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
 Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
 
 <br />
 
 > Features:
 
-- ✅ [API Definition](https://docs.appseed.us/boilerplate-code/api-unified-definition) - the unified API structure implemented by this server
+- 🚀 `Full-stack ready` with [React Soft Dashboard](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/)
 - ✅ Simple, intuitive codebase - can be extended with ease.  
 - ✅ `TypeScript`, `Joy` for validation
 - ✅ **Stack**: NodeJS / Express / SQLite / TypeORM
 - ✅ Auth: Passport / `passport-jwt` strategy 
 - 🆕 `OAuth` for **Github**
-  - Full-stack ready with [React Soft Dashboard](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/)
   
 <br />
 
@@ -25,14 +24,6 @@ Authentication Flow uses `json web tokens` via Passport library - `passport-jwt`
 | `v18.0.0`  | ✅ | ✅ |
 | `v16.10.0` | ✅ | ✅ | 
 | `v14.15.0` | ✅ | ✅ | 
-
-<br />
-
-> Can be used with other [React Starters](https://appseed.us/apps/react) for a complete **Full-Stack** experience:
-
-| [React Node JS Berry](https://appseed.us/product/berry-dashboard/api-server-nodejs/react/) | [React Node Soft Dashboard](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/) | [React Node Horizon](https://appseed.us/product/horizon-ui/api-server-nodejs/) |
-| --- | --- | --- |
-| [![React Node JS Berry](https://user-images.githubusercontent.com/51070104/176936514-f1bccb21-bafe-4b43-9e4c-b6fe0ec9511d.png)](https://appseed.us/product/berry-dashboard/api-server-nodejs/react/) | [![React Node Soft Dashboard](https://user-images.githubusercontent.com/51070104/176936814-74386559-4e05-43d5-b9a4-8f70ce96a610.png)](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/) | [![React Node Horizon](https://user-images.githubusercontent.com/51070104/174428337-181e6dea-0ad9-4fe1-a35f-25e5fa656a9d.png)](https://appseed.us/product/horizon-ui/api-server-nodejs/)
 
 <br />
 

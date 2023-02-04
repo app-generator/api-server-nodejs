@@ -1,8 +1,7 @@
 
-# [Nodejs API Server](https://appseed.us/boilerplate-code/nodejs-starter/)
+# [Nodejs API Server](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/)
 
-Express / [Nodejs Starter](https://appseed.us/boilerplate-code/nodejs-starter/) with JWT authentication, OAuth (Github), and **SQLite** persistance - Provided by **AppSeed** [App Generator](https://appseed.us).
-Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
+Express / Nodejs Starter with JWT authentication, OAuth (Github), and **SQLite** persistance - Provided by `AppSeed`. Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
 
 <br />
 

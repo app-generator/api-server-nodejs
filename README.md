@@ -3,6 +3,8 @@
 
 Express / Nodejs Starter with JWT authentication, OAuth (Github), and **SQLite** persistance - Provided by `AppSeed`. Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
 
+- 👉 [Support](https://appseed.us/support/) via **Discord & Email** provided by `AppSeed`. 
+
 <br />
 
 > Features:

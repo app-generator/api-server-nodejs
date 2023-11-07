@@ -5,9 +5,9 @@
 
 - 👉 [Support](https://appseed.us/support/) via **Discord & Email** provided by `AppSeed`. 
 
-<br />
+---
 
-## 🚀 **[Black Friday Campaign](https://appseed.us/)** is LIVE: `70%Off`
+## 🚀 **[Black Friday Campaign](https://appseed.us/)** is LIVE: `65%Off`
 
 > `React`, `Django`, `Flask`, and `NodeJs` starters crafted and actively supported by **AppSeed**
  

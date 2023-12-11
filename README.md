@@ -3,15 +3,7 @@
 
 [Express/Nodejs Starter](https://appseed.us/product/soft-ui-dashboard/api-server-nodejs/react/) with `JWT Authentication`, OAuth (Github), and **SQLite** persistence - Provided by `AppSeed`. Authentication Flow uses `json web tokens` via Passport library - `passport-jwt` strategy.
 
-- 👉 [Support](https://appseed.us/support/) via **Discord & Email** provided by `AppSeed`. 
-
----
-
-## 🚀 **[Black Friday Campaign](https://appseed.us/)** is LIVE: `65%Off`
-
-> `React`, `Django`, `Flask`, and `NodeJs` starters crafted and actively supported by **AppSeed**
- 
-[![](https://github-production-user-asset-6210df.s3.amazonaws.com/51070104/280080081-1e7c91c0-612f-4418-81e7-34c363378479.jpg)](https://appseed.us/)
+> 👉 [Support](https://appseed.us/support/) via **Discord & Email** provided by `AppSeed`. 
 
 <br />
 
